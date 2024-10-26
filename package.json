@@ -1,12 +1,13 @@
 {
   "name": "react-course",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000r\u0000e\u0000a\u0000c\u0000t\u0000-\u0000c\u0000o\u0000u\u0000r\u0000s\u0000e\u0000\r\u0000 \u0000",
+  "description": "react-course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:wd": "tsc && node \"./tasks/task-%npm_config_task_id%.js\"",
+    "start:linux": "tsc && node \"./tasks/task-${npm_config_task_id}.js\""
   },
-  "author": "",
+  "author": "Vasili Kruhlavetski",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.6.3"
