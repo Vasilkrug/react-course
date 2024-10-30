@@ -79,6 +79,10 @@ class CreditAccount implements Account {
         this.balance += amount;
         console.log(`Пополнили счет ${this.cardAccount} на: ${amount}`);
     }
+
+    checkDebt() {
+        console.log(`Текущий долг ${this.balance < 0 ? Math.abs(this.balance) : 0}`);
+    }
 }
 
 console.log('Дебетовая карта');
@@ -95,5 +99,6 @@ const credit = new CreditAccount(500, 300, 'Credit-1');
 credit.checkBalance();
 credit.replenishment(100);
 credit.withDraw(100);
-credit.withDraw(900);
+credit.withDraw(700);
 credit.checkBalance();
+credit.checkDebt();
